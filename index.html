@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul IT — Reliable IT Support & Services for Offices & SMBs in Hyderabad</title>
+<meta name="description" content="Abdul IT provides fast, friendly IT support for offices and small-to-medium businesses in Hyderabad: helpdesk, networking, cloud, cybersecurity, backups and more. 15-minute response, no lock-in contracts.">
+<meta name="keywords" content="IT support Hyderabad, managed IT services, office IT support, network setup, cybersecurity, Microsoft 365, AMC, retail stock audit Hyderabad, inventory audit services, stock audit report, custom application development Hyderabad, remote IT support India, online IT helpdesk, IT services for small business India">
+<meta property="og:title" content="Abdul IT — Reliable IT Support So Your Office Never Stops">
+<meta property="og:description" content="24/7 IT support for offices and SMBs. Free consultation and IT audit.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b2a4a'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2314b8a6' font-family='Arial' font-weight='bold'>A</text></svg>">
+<style>
+  :root{
+    --blue:#0b2a4a;
+    --blue-2:#123c6b;
+    --blue-3:#1b4f8f;
+    --teal:#14b8a6;
+    --teal-dark:#0d9488;
+    --bg:#f7fafc;
+    --text:#22303f;
+    --muted:#5b6b7c;
+    --border:#e3eaf2;
+    --white:#ffffff;
+    --shadow:0 6px 24px rgba(11,42,74,.08);
+    --shadow-lg:0 14px 40px rgba(11,42,74,.14);
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--text);background:var(--white);line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  ul{list-style:none}
+  .container{max-width:1140px;margin:0 auto;padding:0 24px}
+  section{padding:84px 0}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 52px}
+  .eyebrow{display:inline-block;background:rgba(20,184,166,.12);color:var(--teal-dark);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+  h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.15;color:var(--blue);font-weight:800;letter-spacing:-.02em}
+  h2{font-size:clamp(1.7rem,3.5vw,2.3rem);color:var(--blue);font-weight:800;letter-spacing:-.01em}
+  h3{font-size:1.12rem;color:var(--blue);font-weight:700}
+  .section-head p{color:var(--muted);margin-top:12px;font-size:1.05rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:.95rem;padding:13px 26px;border-radius:10px;border:2px solid transparent;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;white-space:nowrap}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:var(--teal-dark);box-shadow:0 10px 24px rgba(20,184,166,.35)}
+  .btn-outline{border-color:var(--teal);color:var(--teal-dark);background:transparent}
+  .btn-outline:hover{background:var(--teal);color:#fff}
+  .btn-blue{background:var(--blue);color:#fff}
+  .btn-blue:hover{background:var(--blue-2);box-shadow:var(--shadow-lg)}
+
+  /* ---------- NAV ---------- */
+  header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;color:var(--blue)}
+  .logo-mark{width:38px;height:38px;border-radius:10px;background:var(--blue);display:grid;place-items:center;color:var(--teal);font-size:1.1rem;font-weight:800}
+  .logo span{color:var(--teal)}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  .nav-links a{font-weight:600;color:var(--muted);font-size:.95rem;transition:color .15s}
+  .nav-links a:hover{color:var(--blue)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .hamburger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+  .hamburger span{display:block;width:24px;height:3px;background:var(--blue);margin:5px 0;border-radius:2px;transition:.25s}
+  @media(max-width:900px){
+    .nav-links,.nav-cta .btn{display:none}
+    .nav-cta .btn.menu-open{display:inline-flex}
+    .hamburger{display:block}
+    .nav-links{position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:0 24px;max-height:0;overflow:hidden;transition:max-height .3s ease;border-bottom:0 solid var(--border)}
+    .nav-links.open{max-height:400px;border-bottom:1px solid var(--border)}
+    .nav-links a{padding:15px 0;width:100%;border-bottom:1px solid var(--border)}
+    .hamburger.active span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .hamburger.active span:nth-child(2){opacity:0}
+    .hamburger.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{background:linear-gradient(160deg,var(--blue) 0%,var(--blue-3) 100%);color:#fff;padding:96px 0 100px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.25),transparent 70%);top:-160px;right:-140px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;position:relative;z-index:1}
+  .hero h1{color:#fff}
+  .hero h1 em{color:var(--teal);font-style:normal}
+  .hero p.lead{margin:20px 0 30px;font-size:1.15rem;color:#c9d8e8;max-width:520px}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .btn-outline{border-color:rgba(255,255,255,.5);color:#fff}
+  .hero .btn-outline:hover{background:#fff;color:var(--blue);border-color:#fff}
+  .trust-line{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap}
+  .trust-line span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 14px;border-radius:999px;font-size:.85rem;font-weight:600}
+  .hero-card{background:#fff;border-radius:18px;padding:28px;box-shadow:var(--shadow-lg);color:var(--text)}
+  .hero-card h3{margin-bottom:16px}
+  .hero-status{display:flex;gap:12px;align-items:center;padding:12px;background:var(--bg);border-radius:12px;margin-bottom:14px}
+  .status-dot{width:10px;height:10px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(20,184,166,.25);flex-shrink:0}
+  .hero-status b{color:var(--blue)}
+  .hero-status small{display:block;color:var(--muted);font-size:.8rem}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+  /* ---------- SERVICES ---------- */
+  .services{background:var(--bg)}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:980px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.grid-3{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:transform .22s ease,box-shadow .22s ease,border-color .22s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(20,184,166,.4)}
+  .card .icon{width:52px;height:52px;border-radius:12px;background:rgba(20,184,166,.12);display:grid;place-items:center;margin-bottom:18px}
+  .card .icon svg{width:26px;height:26px;stroke:var(--teal-dark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .card p{color:var(--muted);font-size:.95rem;margin-top:8px}
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+  @media(max-width:980px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.steps{grid-template-columns:1fr}}
+  .step{position:relative;text-align:center;padding:34px 20px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition:transform .22s,box-shadow .22s}
+  .step:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+  .step-num{width:46px;height:46px;margin:0 auto 16px;border-radius:50%;background:var(--blue);color:var(--teal);font-weight:800;font-size:1.15rem;display:grid;place-items:center}
+  .step p{color:var(--muted);font-size:.92rem;margin-top:8px}
+
+  /* ---------- PRICING ---------- */
+  .pricing{background:var(--bg)}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+  @media(max-width:980px){.plans{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+  .plan{background:#fff;border:1px solid var(--border);border-radius:18px;padding:32px;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s}
+  .plan:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+  .plan.popular{border:2px solid var(--teal);box-shadow:var(--shadow-lg);position:relative}
+  .popular-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:999px}
+  .plan h3{font-size:1.25rem}
+  .plan .price{font-size:2.4rem;font-weight:800;color:var(--blue);margin:14px 0 2px}
+  .plan .price small{font-size:.95rem;color:var(--muted);font-weight:600}
+  .plan .per{color:var(--muted);font-size:.88rem;margin-bottom:20px}
+  .plan ul{margin:0 0 26px;flex:1}
+  .plan li{padding:9px 0 9px 28px;position:relative;font-size:.93rem;color:var(--text)}
+  .plan li::before{content:"✓";position:absolute;left:0;color:var(--teal-dark);font-weight:800}
+  .plan .btn{width:100%}
+  .custom-quote{text-align:center;margin-top:34px;color:var(--muted)}
+  .custom-quote a{color:var(--teal-dark);font-weight:700}
+
+  /* ---------- WHY US ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:52px}
+  @media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{text-align:center;background:linear-gradient(160deg,var(--blue),var(--blue-3));border-radius:var(--radius);padding:34px 18px;color:#fff}
+  .stat b{display:block;font-size:2.5rem;font-weight:800;color:var(--teal)}
+  .stat span{font-size:.9rem;color:#c9d8e8}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:980px){.why-grid{grid-template-columns:1fr}}
+
+  /* ---------- INDUSTRIES ---------- */
+  .industries{background:var(--bg)}
+  .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+  .chip{background:#fff;border:1px solid var(--border);border-radius:999px;padding:16px 30px;display:flex;align-items:center;gap:12px;font-weight:700;color:var(--blue);transition:transform .2s,box-shadow .2s,border-color .2s}
+  .chip:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--teal)}
+  .chip svg{width:22px;height:22px;stroke:var(--teal-dark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .t-card{display:flex;flex-direction:column}
+  .t-stars{color:#f5a623;letter-spacing:2px;margin-bottom:14px}
+  .t-card blockquote{font-size:.98rem;color:var(--text);flex:1}
+  .t-person{display:flex;align-items:center;gap:14px;margin-top:22px}
+  .t-avatar{width:52px;height:52px;border-radius:50%;background:var(--blue);color:var(--teal);font-weight:800;font-size:1.15rem;display:grid;place-items:center;flex-shrink:0}
+  .t-person b{display:block;color:var(--blue)}
+  .t-person small{color:var(--muted)}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--bg);max-width:760px;margin:0 auto}
+  details{background:#fff;border:1px solid var(--border);border-radius:12px;margin-bottom:14px;overflow:hidden;transition:box-shadow .2s}
+  details[open]{box-shadow:var(--shadow)}
+  summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px;font-weight:700;color:var(--blue);font-size:.98rem}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;color:var(--teal-dark);transition:transform .2s;flex-shrink:0}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 22px 20px;color:var(--muted);font-size:.94rem}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+  form{background:#fff;border:1px solid var(--border);border-radius:18px;padding:32px}
+  .f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:560px){.f-row{grid-template-columns:1fr}}
+  .field{margin-bottom:16px}
+  label{display:block;font-weight:600;font-size:.85rem;color:var(--blue);margin-bottom:6px}
+  input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font:inherit;color:var(--text);background:#fff;transition:border-color .15s,box-shadow .15s}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(20,184,166,.15)}
+  .error-msg{color:#d64545;font-size:.78rem;margin-top:4px;display:none}
+  .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#d64545}
+  .field.invalid .error-msg{display:block}
+  .form-success{display:none;background:rgba(20,184,166,.1);border:1.5px solid var(--teal);color:var(--teal-dark);font-weight:700;padding:14px 18px;border-radius:10px;margin-bottom:18px}
+  .form-error{display:none;background:#fdeeee;border:1.5px solid #d64545;color:#a33;font-weight:700;padding:14px 18px;border-radius:10px;margin-bottom:18px}
+  .contact-info .card{margin-bottom:20px}
+  .contact-info .line{display:flex;gap:14px;align-items:flex-start;padding:10px 0}
+  .contact-info .line svg{width:20px;height:20px;stroke:var(--teal-dark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:3px}
+  .contact-info .line b{color:var(--blue);display:block;font-size:.85rem}
+  .contact-info .line span{color:var(--muted);font-size:.95rem}
+  .map-placeholder{background:linear-gradient(160deg,#e8eef5,#d8e3ee);border-radius:var(--radius);height:220px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem;border:1px solid var(--border)}
+  .map-placeholder svg{width:36px;height:36px;stroke:var(--blue-2);fill:none;stroke-width:1.6;margin:0 auto 8px}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--blue);color:#b6c6d8;padding:64px 0 0}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+  @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
+  footer h4{color:#fff;font-size:.95rem;margin-bottom:18px;letter-spacing:.04em}
+  footer a{display:block;padding:5px 0;font-size:.9rem;transition:color .15s}
+  footer a:hover{color:var(--teal)}
+  .footer-about p{font-size:.9rem;margin:14px 0 18px;max-width:280px}
+  .socials{display:flex;gap:12px}
+  .socials a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;padding:0;transition:background .2s,transform .2s}
+  .socials a:hover{background:var(--teal);transform:translateY(-3px)}
+  .socials svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:56px;padding:22px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:.85rem}
+  .footer-bottom a{display:inline;padding:0}
+
+  /* ---------- FLOATING BUTTONS ---------- */
+  .float-btns{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:12px;z-index:90}
+  .float-btn{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:transform .2s}
+  .float-btn:hover{transform:scale(1.1)}
+  .float-btn svg{width:26px;height:26px}
+  .wa{background:#25d366}
+  .wa svg{fill:#fff}
+  .call{background:var(--teal)}
+  .call svg{stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- SCROLL ANIMATIONS ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.visible{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .btn:hover,.card:hover,.plan:hover,.step:hover,.chip:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="Abdul IT home">
+      <span class="logo-mark" aria-hidden="true">A</span>
+      Abdul<span>IT</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#plans">Plans</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <h1>Reliable IT Support So Your <em>Office Never Stops</em></h1>
+      <p class="lead">From a frozen laptop to a full network rollout, Abdul IT keeps offices and growing businesses across Hyderabad running smoothly — without the cost of an in-house team.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Request a Quote</a>
+        <a href="tel:+917331159692" class="btn btn-outline">Call Now</a>
+      </div>
+      <div class="trust-line" aria-label="Our guarantees">
+        <span>🕒 24/7 support</span>
+        <span>⚡ 15-minute response</span>
+        <span>💻 500+ devices managed</span>
+      
+        <span>🇮🇳 Serving clients across India</span>
+      </div>
+    </div>
+    <div class="hero-card" aria-hidden="true">
+      <h3>Live support status</h3>
+      <div class="hero-status">
+        <div class="status-dot"></div>
+        <div><b>Helpdesk online now</b><small>Average pickup time: 38 seconds</small></div>
+      </div>
+      <div class="hero-status">
+        <div class="status-dot"></div>
+        <div><b>Today: 41 tickets resolved</b><small>97% fixed remotely on first contact</small></div>
+      </div>
+      <div class="hero-status">
+        <div class="status-dot"></div>
+        <div><b>Next engineer available</b><small>On-site visit within 4 business hours</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>IT services that cover your whole office</h2>
+      <p>One partner for every device, user and system you rely on — delivered fast and explained in plain language.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+        <h3>Helpdesk &amp; Remote Support</h3>
+        <p>Friendly engineers answer in minutes and fix most issues remotely — no waiting for a site visit.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></div>
+        <h3>On-site IT Support</h3>
+        <p>Engineers on the ground across Hyderabad for hardware faults, cabling and everything hands-on.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14 0"/><path d="M2 9a15 15 0 0 1 20 0"/><path d="M8.5 15.5a6 6 0 0 1 7 0"/><circle cx="12" cy="19" r="1.5"/></svg></div>
+        <h3>Network Setup &amp; Wi-Fi Management</h3>
+        <p>Structured cabling, firewalled routers and Wi-Fi that reaches every corner of your office.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+        <h3>Server &amp; Cloud Management</h3>
+        <p>Microsoft 365, Google Workspace and server administration — setup, licensing, migration and upkeep.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Cybersecurity &amp; Antivirus</h3>
+        <p>Managed endpoint protection, phishing defence, patching and security policies that keep threats out.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg></div>
+        <h3>Backup &amp; Disaster Recovery</h3>
+        <p>Automatic, tested backups so a crashed drive or ransomware never becomes a business disaster.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <h3>CCTV, Printers &amp; Hardware</h3>
+        <p>Surveillance systems, printers, scanners and new-workstation installation — supplied and configured.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div>
+        <h3>IT Procurement &amp; AMC</h3>
+        <p>Right-priced hardware sourcing plus annual maintenance contracts for predictable, worry-free IT.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 2h6a1 1 0 0 1 1 1v1h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V3a1 1 0 0 1 1-1z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Retail Stock Audit</h3>
+        <p>Barcode-based inventory audits for retail showrooms — book vs physical count, variance analysis and signed, management-ready reports.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Custom Application Development</h3>
+        <p>Bespoke apps for your daily operations — billing, inventory, reporting, dashboards — built and customised around your workflow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STOCK AUDIT ================= -->
+<section class="services" id="stock-audit">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Specialised service</span>
+      <h2>Retail stock audits with boardroom-ready reports</h2>
+      <p>Our team audits retail store inventory end to end — and delivers a reconciliation-grade report your management can act on.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg></div>
+        <h3>Full-store barcode scanning</h3>
+        <p>Every item scanned and matched against system book stock — apparels, jewellery, accessories, everything on the floor.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+        <h3>Variance &amp; reconciliation</h3>
+        <p>Line-by-line shortage/excess reports, joint recounts with the store team, and a final post-reconciliation shortage report.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div>
+        <h3>14-part audit report</h3>
+        <p>Book stock, physical scan, variance annexures, category summaries, inward/outward checks, petty cash verification, store declaration and auditor observations.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Fixed timelines, zero disruption</h3>
+        <p>Audits executed overnight or on your slowest day, so your showroom opens on time the next morning with zero downtime.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+        <h3>Sample report &amp; portfolio</h3>
+        <p>A full sample audit report and our retail-audit portfolio are available on request — just WhatsApp us and we'll share them the same day.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Priced by stock size</h3>
+        <p>Every store is different, so pricing is quoted per store based on your stock size — tell us your approximate item count and get a free same-day quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Getting started</span>
+      <h2>Up and running in four simple steps</h2>
+      <p>No jargon, no surprises — just a clear plan for your office IT.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Contact us</h3>
+        <p>Call, WhatsApp or fill the form. We respond within 15 minutes during business hours.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Free IT audit</h3>
+        <p>We review your devices, network and risks, and show you exactly where you stand.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Custom plan</h3>
+        <p>A transparent, fixed monthly quote covering only what your business actually needs.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Ongoing support</h3>
+        <p>24/7 helpdesk, proactive monitoring and a named engineer who knows your setup.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="plans">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Plans &amp; pricing</span>
+      <h2>Simple monthly plans, no lock-in contracts</h2>
+      <p>Cancel anytime with 30 days' notice. All plans include our 15-minute response guarantee.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Basic</h3>
+        <div class="price">₹1,499 <small>/ month</small></div>
+        <div class="per">For small offices up to 10 people</div>
+        <ul>
+          <li>Business-hours helpdesk (9am–7pm, Mon–Sat)</li>
+          <li>Unlimited remote support</li>
+          <li>2 on-site visits per month</li>
+          <li>Antivirus on all covered devices</li>
+          <li>Monthly system health report</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Choose Basic</a>
+      </div>
+      <div class="plan popular reveal">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Business</h3>
+        <div class="price">₹3,499 <small>/ month</small></div>
+        <div class="per">For growing teams up to 30 people</div>
+        <ul>
+          <li>24/7 helpdesk with 15-min response</li>
+          <li>Unlimited remote + priority on-site</li>
+          <li>Cloud management (M365 / Google Workspace)</li>
+          <li>Managed antivirus &amp; patching</li>
+          <li>Automated backups with monthly testing</li>
+          <li>Wi-Fi &amp; network monitoring</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Choose Business</a>
+      </div>
+      <div class="plan reveal">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <div class="per">For 30+ users, multi-branch &amp; servers</div>
+        <ul>
+          <li>Everything in Business, plus:</li>
+          <li>Dedicated account engineer</li>
+          <li>Server &amp; firewall management</li>
+          <li>Cybersecurity policy &amp; staff training</li>
+          <li>Disaster recovery planning</li>
+          <li>Quarterly strategy reviews</li>
+        </ul>
+        <a href="#contact" class="btn btn-blue">Talk to Sales</a>
+      </div>
+    </div>
+    <p class="custom-quote reveal">Need something different? <a href="#contact">Contact us for a custom quote</a> — one-off projects and AMCs welcome.</p>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section id="why-us">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why choose us</span>
+      <h2>The team businesses actually recommend</h2>
+      <p>We measure ourselves on one thing: how quickly your people can get back to work.</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b class="counter" data-target="15">0</b><span>min avg. response time</span></div>
+      <div class="stat reveal"><b class="counter" data-target="250" data-suffix="+">0</b><span>businesses supported</span></div>
+      <div class="stat reveal"><b class="counter" data-target="500" data-suffix="+">0</b><span>devices under management</span></div>
+      <div class="stat reveal"><b class="counter" data-target="98" data-suffix="%">0</b><span>client satisfaction</span></div>
+    </div>
+    <div class="why-grid">
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></div>
+        <h3>Fast when it matters</h3>
+        <p>15-minute average response and 97% of issues fixed on first contact. Your team never sits idle waiting for IT.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+        <h3>Certified engineers</h3>
+        <p>Microsoft, Cisco and CompTIA certified professionals — plus plain-English explanations with every fix.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h3>No long lock-in contracts</h3>
+        <p>Transparent monthly pricing and the freedom to leave with 30 days' notice. We keep clients by being good, not by contract.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section class="industries" id="industries">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Industries we serve</span>
+      <h2>Already trusted across many industries</h2>
+      <p>Every office is different — we tailor support to how your team actually works.</p>
+    </div>
+    <div class="chips reveal">
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg> Law firms</div>
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg> Clinics &amp; healthcare</div>
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg> Startups</div>
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg> Schools &amp; institutes</div>
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M3 9l1-5h5l1 4M14 8h6v12H4V9"/><path d="M4 20h16"/></svg> Retail offices</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">About us</span>
+      <h2>IT people can actually call a friend</h2>
+      <p style="color:var(--muted);margin-top:16px">Abdul IT started with a simple frustration: small businesses deserved the same reliable IT that big companies get, without enterprise prices or condescending service. Today we manage 500+ devices for law firms, clinics, schools and startups across Hyderabad — and support clients across India: remote helpdesk nationwide, engineers on the ground in Hyderabad.</p>
+      <p style="color:var(--muted);margin-top:14px">We're a close-knit team of certified engineers who answer the phone, show up on time, and explain what we did in words you understand. No ticket black holes. No surprise invoices.</p>
+      <div style="margin-top:26px"><a href="#contact" class="btn btn-primary">Meet the team — book a free audit</a></div>
+    </div>
+    <div class="card reveal" style="display:flex;flex-direction:column;justify-content:center;gap:16px">
+      <div class="hero-status"><div class="status-dot"></div><div><b>Founded 2014</b><small>12+ years supporting Indian businesses</small></div></div>
+      <div class="hero-status"><div class="status-dot"></div><div><b>Local + remote</b><small>On-site engineers across Hyderabad, remote helpdesk nationwide</small></div></div>
+      <div class="hero-status"><div class="status-dot"></div><div><b>One partner, everything IT</b><small>From a single printer to full office rollouts</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="services" id="testimonials" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Client stories</span>
+      <h2>What our clients say</h2>
+      <p>Real feedback from offices we support every day.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card t-card reveal">
+        <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Our Wi-Fi used to drop every single day. Abdul IT rebuilt the network over one weekend and we haven't had a single outage since. Response time is honestly unbelievable — they call back before we finish writing the email."</blockquote>
+        <div class="t-person">
+          <div class="t-avatar" aria-hidden="true">PS</div>
+          <div><b>Priya Sharma</b><small>Operations Head, Sharma &amp; Associates (Law firm)</small></div>
+        </div>
+      </div>
+      <div class="card t-card reveal">
+        <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Patient records are our lifeblood. Their backup and antivirus setup gives us complete peace of mind, and their team understands clinic hours — they work around us, never the other way around."</blockquote>
+        <div class="t-person">
+          <div class="t-avatar" aria-hidden="true">RK</div>
+          <div><b>Dr. Rajesh Kumar</b><small>Founder, CityCare Clinic</small></div>
+        </div>
+      </div>
+      <div class="card t-card reveal">
+        <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"We scaled from 8 to 35 people in two years and Abdul IT scaled with us — laptops, Microsoft 365, onboarding new joiners. It's like having an in-house IT team for a fraction of the cost."</blockquote>
+        <div class="t-person">
+          <div class="t-avatar" aria-hidden="true">AM</div>
+          <div><b>Ananya Menon</b><small>Co-founder, Brightlane Technologies (Startup)</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="services" id="faq" style="background:var(--white)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions we hear a lot</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>How fast do you respond to support requests?</summary>
+        <p>Our average response time is 15 minutes during business hours, and the Business and Enterprise plans include 24/7 coverage. Around 97% of issues are fixed remotely on first contact, so most problems are solved before an on-site visit is even needed.</p>
+      </details>
+      <details>
+        <summary>Do I need to sign a long-term contract?</summary>
+        <p>No. All our plans are monthly with no lock-in. You can cancel anytime with 30 days' notice. We also offer one-off projects and annual maintenance contracts (AMC) if you prefer fixed annual pricing.</p>
+      </details>
+      <details>
+        <summary>Can you support our office if you're not located nearby?</summary>
+        <p>Yes. Most support happens remotely — our helpdesk can securely access your systems from anywhere. For hands-on work, our engineers cover Hyderabad and Secunderabad, and our remote helpdesk supports teams across India.</p>
+      </details>
+      <details>
+        <summary>We already have an internal IT person. Can you work alongside them?</summary>
+        <p>Absolutely. Many clients use us as an extension of their internal team — handling overflow tickets, projects, security and after-hours coverage while their in-house staff focuses on day-to-day operations.</p>
+      </details>
+      <details>
+        <summary>What's included in the free IT audit?</summary>
+        <p>We review your devices, network, software licences, backups and security posture, then give you a plain-English report with prioritised recommendations. It's completely free and there's no obligation to buy anything.</p>
+      </details>
+      <details>
+        <summary>Do you supply hardware and software licences too?</summary>
+        <p>Yes. We source laptops, desktops, networking gear, CCTV and printers at competitive prices, and we handle Microsoft 365, Google Workspace and antivirus licensing — so you have one point of contact for everything.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="services" id="contact" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Get your free consultation</h2>
+      <p>Tell us what's slowing your office down. We'll respond within 15 minutes during business hours.</p>
+    </div>
+    <div class="contact-grid">
+      <form id="contactForm" class="reveal" novalidate>
+        <div class="form-success" id="formSuccess" role="status">✅ Thank you! Your request has been received. Our team will call you back within 15 minutes during business hours.</div>
+        <div class="form-error" id="formError" role="alert"></div>
+        <div class="f-row">
+          <div class="field">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="e.g. Priya Sharma">
+            <div class="error-msg">Please enter your name.</div>
+          </div>
+          <div class="field">
+            <label for="company">Company *</label>
+            <input type="text" id="company" name="company" required autocomplete="organization" placeholder="e.g. Sharma &amp; Associates">
+            <div class="error-msg">Please enter your company name.</div>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="field">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+91 73311 59692">
+            <div class="error-msg">Please enter a valid phone number (at least 10 digits).</div>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+            <div class="error-msg">Please enter a valid email address.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">Service needed *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service…</option>
+            <option>Helpdesk &amp; remote support</option>
+            <option>On-site IT support</option>
+            <option>Network setup &amp; Wi-Fi</option>
+            <option>Server &amp; cloud management</option>
+            <option>Cybersecurity &amp; antivirus</option>
+            <option>Backup &amp; disaster recovery</option>
+            <option>CCTV, printers &amp; hardware</option>
+            <option>IT procurement &amp; AMC</option>
+            <option>Retail stock audit</option>
+            <option>Custom application development</option>
+            <option>Full IT audit / not sure yet</option>
+          </select>
+          <div class="error-msg">Please choose a service.</div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us briefly what you need help with…"></textarea>
+        </div>
+        <input type="text" name="website" style="position:absolute;left:-9999px;top:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary" style="width:100%">Send Request</button>
+      </form>
+      <div class="contact-info reveal">
+        <div class="card">
+          <div class="line">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><b>Phone</b><span>+91 73311 59692 (24/7 helpdesk)</span></div>
+          </div>
+          <div class="line">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <div><b>Email</b><span>thahseen.it11@gmail.com</span></div>
+          </div>
+          <div class="line">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><b>Office</b><span>Banjara Hills, Hyderabad, Telangana 500034</span></div>
+          </div>
+          <div class="line">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><b>Hours</b><span>Helpdesk 24/7 · Office Mon–Sat, 9am–7pm IST</span></div>
+          </div>
+        </div>
+        <a class="btn btn-primary" style="width:100%;background:#25d366" href="https://wa.me/917331159692?text=Hi%20Abdul%20IT%2C%20I%27d%20like%20a%20free%20consultation" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.966 1.164-.198.199-.396.223-.693.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.174-.297-.019-.458.13-.606.134-.133.347-.348.52-.522.174-.174.232-.298.347-.497.115-.198.057-.372-.058-.52-.115-.149-.65-1.46-.89-1.963-.233-.488-.47-.42-.65-.427-.17-.007-.365-.01-.56-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C12.831-4.034-.931 1.347.32 11.552c.12 1.067.348 2.09.68 3.063L0 24l9.56-2.505c.94.257 1.938.392 2.966.392 9.925 0 15.126-11.205 10.85-17.438h-.856zM12.53 20.07c-.983 0-1.947-.166-2.855-.48l-.675-.215-4.66 1.22 1.245-4.548-.428-.674c-2.19-3.486-1.148-8.03 2.336-10.22 3.484-2.19 8.03-1.148 10.22 2.336 2.19 3.486 1.148 8.03-2.336 10.22-1.206.757-2.578 1.157-3.847 1.161z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <div class="map-placeholder">
+          <div>
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Interactive map placeholder<br>Embed your Google Maps iframe here
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#home" class="logo" style="color:#fff">Abdul<span style="color:var(--teal)">IT</span></a>
+        <p>Reliable, friendly IT support for offices and small-to-medium businesses across Hyderabad. 24/7 helpdesk, certified engineers, no lock-in contracts.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A6 6 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#testimonials">Testimonials</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Helpdesk support</a>
+        <a href="#services">Cloud management</a>
+        <a href="#services">Cybersecurity</a>
+        <a href="#services">Backup &amp; recovery</a>
+        <a href="#stock-audit">Retail stock audit</a>
+        <a href="#services">App development</a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="tel:+917331159692">+91 73311 59692</a>
+        <a href="mailto:thahseen.it11@gmail.com">thahseen.it11@gmail.com</a>
+        <a href="#contact">Request a free consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Abdul IT. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<div class="float-btns">
+  <a class="float-btn wa" href="https://wa.me/917331159692?text=Hi%20Abdul%20IT%2C%20I%20need%20IT%20support" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M20.52 3.449C12.831-4.034-.931 1.347.32 11.552c.12 1.067.348 2.09.68 3.063L0 24l9.56-2.505c.94.257 1.938.392 2.966.392 9.925 0 15.126-11.205 10.85-17.438h-.856zM12.53 20.07c-.983 0-1.947-.166-2.855-.48l-.675-.215-4.66 1.22 1.245-4.548-.428-.674c-2.19-3.486-1.148-8.03 2.336-10.22 3.484-2.19 8.03-1.148 10.22 2.336 2.19 3.486 1.148 8.03-2.336 10.22-1.206.757-2.578 1.157-3.847 1.161z"/></svg>
+  </a>
+  <a class="float-btn call" href="tel:+917331159692" aria-label="Call us now">
+    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script>
+  // ----- Mobile menu -----
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }));
+
+  // ----- Scroll reveal animations -----
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        entry.target.style.transitionDelay = (i % 4) * 70 + 'ms';
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ----- Animated stat counters -----
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const suffix = el.dataset.suffix || '';
+      const duration = 1400;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+  // ----- Contact form validation -----
+  const form = document.getElementById('contactForm');
+  const successBox = document.getElementById('formSuccess');
+  const validators = {
+    name: v => v.trim().length >= 2,
+    company: v => v.trim().length >= 2,
+    phone: v => v.replace(/\D/g, '').length >= 10,
+    email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+    service: v => v !== ''
+  };
+  function validateField(input) {
+    const rule = validators[input.name];
+    const field = input.closest('.field');
+    const ok = rule ? rule(input.value) : true;
+    field.classList.toggle('invalid', !ok);
+    return ok;
+  }
+  form.querySelectorAll('input, select').forEach(input => {
+    input.addEventListener('input', () => validateField(input));
+    input.addEventListener('change', () => validateField(input));
+  });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let allValid = true;
+    form.querySelectorAll('input, select').forEach(input => {
+      if (!validateField(input)) allValid = false;
+    });
+    if (!allValid) {
+      form.querySelector('.field.invalid input, .field.invalid select')?.focus();
+      return;
+    }
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    try {
+      const data = Object.fromEntries(new FormData(form).entries());
+      const res = await fetch('https://superagent-1ba59707.base44.app/functions/abdulItLead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data })
+      });
+      const result = await res.json().catch(() => ({}));
+      if (!res.ok || !result.ok) throw new Error(result.error || 'Something went wrong');
+      successBox.style.display = 'block';
+      formError.style.display = 'none';
+      form.reset();
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      formError.textContent = '⚠ ' + (err.message || 'Something went wrong. Please call us at +91 73311 59692.');
+      formError.style.display = 'block';
+      successBox.style.display = 'none';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Request';
+    }
+  });
+
+  // ----- Footer year -----
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
